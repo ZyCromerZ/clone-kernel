@@ -7,7 +7,7 @@ jobs:
       - run:
           command: |
             branch=$CIRCLE_BRANCH
-            git clone https://$githubKey@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git --depth=1
+            git clone https://$myKey@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git --depth=1
             cd builder_kernel
             source main.sh
           no_output_timeout : 5h
